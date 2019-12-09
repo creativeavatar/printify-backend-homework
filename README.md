@@ -19,6 +19,7 @@ Because network is unreliable and services tend to fail, let's agree on default 
 ## Technical requirements:
 
 * You have total control over tools, as long as application is written in PHP and Laravel or Symfony framework.
+* Application has to be dockerized.
 
 ## What gets evaluated:
 

@@ -18,13 +18,16 @@ Because network is unreliable and services tend to fail, let's agree on default 
 
 ## Technical requirements:
 
-* You have total control over tools, as long as application is written in PHP and Laravel or Symfony framework.
+* Application has to be written in PHP using Symfony framework.
 * Application has to be dockerized.
-* You have to write tests
+* Application has to have tests
 
 ## What gets evaluated:
 
-* Conformance to business requirements
-* Code quality, including testability
-* How easy it is to run and deploy the service (don't make us install Oracle database please 😉
-* Good luck and have fun!
+* Are business requirements fulfilled
+* RESTful best practices
+* Software design
+* Quality of the code
+* Are tests useful and green
+
+Happy Coding!

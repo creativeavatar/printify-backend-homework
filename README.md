@@ -43,26 +43,26 @@ Available only for domestic orders. Shipping cost is $10 per item for all produc
 
 Required:
 
- Full name  
- Street  
- Country  
- State/Region  
- ZIP  
- Phone  
+- Full name  
+- Street  
+- Country  
+- State/Region  
+- ZIP  
+- Phone  
 
 ### International orders
 
 Required:
 
-Full name  
-Address  
-Country  
-Phone  
+- Full name  
+- Address  
+- Country  
+- Phone  
   
 Optional:
 
-State/Region  
-ZIP  
+- State/Region  
+- ZIP  
 
 ## Order payments
 
@@ -70,17 +70,17 @@ Whenever a new order is placed, the user is charged the total cost from their ba
 
 ## Technical requirements
 
-The application has to be written in PHP 7.2+ using the Symfony 4+ framework  
-The application has to be dockerized  
-Application must have tests  
-Github, Gitlab, Bitbucket  
+- The application has to be written in PHP 7.2+ using the Symfony 4+ framework  
+- The application has to be dockerized  
+- Application must have tests  
+- Github, Gitlab, Bitbucket  
 
 ## What gets evaluated
 
-Are business requirements fulfilled  
-RESTful best practices  
-Software design  
-Tests have to be meaningful and green  
-Readme  
+- Are business requirements fulfilled  
+- RESTful best practices  
+- Software design  
+- Tests have to be meaningful and green  
+- Readme  
 
 Happy Coding!

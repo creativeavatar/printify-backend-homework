@@ -1,33 +1,86 @@
-Create a tiny RESTful web service with the following business requirements:
+![Image description](https://printify.com/wp-content/themes/printify/assets/svg/logo.svg)
 
-## Application must expose REST API endpoints for the following functionality:
+# Printify RESTful API homework
 
-* create product (price, productType, color, size)
-* calculate order price (Collection of products and quantities)  (should also save Order draft somewhere)
-* list all Orders
-* list all Orders by productType
+Your task is to create a RESTful API where users can create products and place orders with those products. All orders  should be fulfilled and shipped out from only US based Printing companies.
 
-## Service must perform operation validation according to the following rules and reject if:
+## User
 
-* type + color + size already exists
-* Order is empty or total price is less than 10
-* N orders / second are received from a single country (essentially we want to limit number of orders coming from a country in * a given timeframe)
+A User can have many products on their product list and be able to place numerous Orders. A new user can be created via end-point - all users upon creation have $100 in their balance (No need to create authorization and logins).
 
-Service must perform origin country resolution using a web service and store country code together with the order draft.
-Because network is unreliable and services tend to fail, let's agree on default country code - "US".
+All Products and Orders  should be linked to Users.
 
-## Technical requirements:
+## Product
 
-* Application has to be written in PHP using Symfony framework.
-* Application has to be dockerized.
-* Application has to have tests
+Your RESTful API should offer  the creation of only two types of products - mugs and t-shirts. Each product should have a Title, Unique SKU (Stock Keeping Unit) and Cost. You should  be able to get a list of products for each  user.
 
-## What gets evaluated:
+## Order
 
-* Are business requirements fulfilled
-* RESTful best practices
-* Software design
-* Quality of the code
-* Are tests useful and green
+Your RESTful API  should allow placement of orders with multiple products. The total cost of the order should include shipping and product costs. Orders can be shipped either with Standard or Express shipping. You should be able to get a list of all orders for each user.
+
+## Shipping costs
+
+### Standard
+
+#### Domestic order
+
+Mugs: $2 for the first item and $1 for each additional item in the order.  
+T-Shirts: $1 for the first item and $0.50 for each additional item in the order.
+
+
+#### International orders
+
+Mugs: $5 for the first item and $2.50 for each additional item in the order.  
+T-Shirts: $3 for the first item and $1.50 for each additional item in the order.
+
+### Express
+
+Available only for domestic orders. Shipping cost is $10 per item for all products. 
+
+## Address validation
+
+### Domestic orders (within US)
+
+Required:
+
+ Full name  
+ Street  
+ Country  
+ State/Region  
+ ZIP  
+ Phone  
+
+### International orders
+
+Required:
+
+Full name  
+Address  
+Country  
+Phone  
+  
+Optional:
+
+State/Region  
+ZIP  
+
+## Order payments
+
+Whenever a new order is placed, the user is charged the total cost from their balance. A new order cannot be created if the user does not have enough balance.
+
+## Technical requirements
+
+The application has to be written in PHP 7.2+ using the Symfony 4+ framework  
+The application has to be dockerized  
+Application must have tests  
+Github, Gitlab, Bitbucket  
+
+## What gets evaluated
+
+Are business requirements fulfilled  
+RESTful best practices  
+Software design  
+Tests have to be meaningful and green  
+Readme  
 
 Happy Coding!

@@ -47,6 +47,7 @@ Required:
 - Street  
 - Country  
 - State/Region  
+- City
 - ZIP  
 - Phone  
 
@@ -58,6 +59,7 @@ Required:
 - Address  
 - Country  
 - Phone  
+- City
   
 Optional:
 

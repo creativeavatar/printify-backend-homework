@@ -44,7 +44,7 @@ Available only for domestic orders. Shipping cost is $10 per item for all produc
 Required:
 
 - Full name  
-- Street  
+- Address  
 - Country  
 - State/Region  
 - City

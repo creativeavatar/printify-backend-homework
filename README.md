@@ -46,7 +46,7 @@ Required:
 - Full name  
 - Address  
 - Country  
-- State/Region  
+- State  
 - City
 - ZIP  
 - Phone  
@@ -63,7 +63,7 @@ Required:
   
 Optional:
 
-- State/Region  
+- Region  
 - ZIP  
 
 ## Order payments

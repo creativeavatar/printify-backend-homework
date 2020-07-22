@@ -2,7 +2,7 @@
 
 # Printify RESTful API homework
 
-Your task is to create a RESTful API where users can create products and place orders with those products. All orders  should be fulfilled and shipped out from only US based Printing companies.
+Your task is to create a RESTful API where users can create products and place orders with those products. For the sake of this exercise, please assume all orders are fulfilled and shipped out from US based Printing companies.
 
 ## User
 
